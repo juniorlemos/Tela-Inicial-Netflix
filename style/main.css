@@ -1,0 +1,116 @@
+:root {
+
+    --vermelho:#E50914;
+    --preto:#141414 ;
+    --branco:#ffffff
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+body{
+        background: var(--preto);
+        font-family: 'Arial', Times, serif;
+        color: var(--branco);
+}
+a{
+    font-size: 25px;
+}
+
+header .container{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;            
+
+}
+
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family:'BEBAS NEUE BOLD','Arial','Times';
+    font-size:60px;
+
+}
+header nav a {
+
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+
+}
+
+header nav a:hover{
+    color:var(--branco);
+} 
+
+.filme-principal{
+
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url(/img/got.jpg);
+    height: 650px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme-principal .descricao{
+
+    margin-bottom: 40px;
+    margin-top: 10px;
+    font-size: 23px;
+}
+.filme-principal .titulo{
+margin-top: 15%;
+font-size: 45px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: var(--branco);
+    padding: 15px 30px ;
+    margin-right: 15px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .3s ease all;
+
+}
+.botao:hover{
+    background-color: var(--branco);
+    color:var(--preto)
+}
+
+.botao i{  
+    margin-right: 8px;
+}
+.container{
+
+    margin-left: 20px;
+}
+.filme-principal .container{
+
+    width: 70%;
+}
+
+.carousel-filme{
+    margin-top: 5px;
+   height: 20%;
+    
+}
+
+.box-filme{
+
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+
+}
